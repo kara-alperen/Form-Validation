@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body> 
+    <div class="container">
+        <img src="https://picsum.photos/id/20/500/500">
+        <form id="mainForm" novalidate>
+            <h2>JavaScript Form </h2>       
+            <div class="form-control">
+                <label for="name">İsim</label>
+                <input type="text" id="name"
+                placeholder="İsim Giriniz"
+                autocapitalize="off">
+                <i class="icon"></i>
+            </div>
+            <div class="form-control">
+                <label for="name">Email</label>
+                <input type="text" id="email"
+                placeholder="Mail giriniz"
+                autocapitalize="off">
+                <i class="icon"></i>
+            </div>
+            <div class="form-control">
+                <label for="name">Telefon</label>
+                <input type="text" id="phone"
+                placeholder="Telefon Giriniz"
+                autocapitalize="off">
+                <i class="icon"></i>
+            </div>
+            <div class="form-control">
+                <label for="name">Şifre</label>
+                <input type="text" id="password"
+                placeholder="Şifre Giriniz"
+                autocapitalize="off">
+                <i class="icon"></i>
+            <div class="form-control">
+                <label for="name">Mesaj</label>
+                <textarea id="message" placeholder="Mesaj Giriniz"></textarea>
+                <i class="icon"></i>
+
+                <button type="submit">Gönder</button>
+            </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="successModal" class="modal">
+       <div class="modal-content">
+        <span class="close-button"></span>
+        <h2>Succsess</h2>
+        <p>Your form has been submited </p>
+       </div> 
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
